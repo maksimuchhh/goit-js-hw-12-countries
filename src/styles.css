@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /*
+   * CSS image reference example.
+   */
+}
+ul {
+  list-style: none;
+}
+.country-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.languages {
+  list-style: circle;
+}
+.country-name {
+  font-size: 28px;
+  text-align: center;
+}

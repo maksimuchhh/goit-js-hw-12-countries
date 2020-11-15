@@ -1,0 +1,28 @@
+{{#each this}}
+{{#with this}}
+<h2 class="country-name">{{name}}</h2>
+<div class="country-container">
+    <ul>
+        <li>
+            <p>Capital: {{capital}}</p>
+        </li>
+        <li>
+            <p>Population: {{population}}</p>
+        </li>
+        <li>
+            <p>Languages:</p>
+            <ul class="languages">
+                {{#each languages}}
+                {{#with this}}
+                <li>
+                    <p>{{this.name}}</p>
+                </li>
+                {{/with}}
+                {{/each}}
+            </ul>
+        </li>
+    </ul>
+    <img src="{{flag}}" alt="flag" width='350px'>
+</div>
+{{/with}}
+{{/each}}
