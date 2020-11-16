@@ -19,7 +19,6 @@ function renderCountries() {
     .then(response => response.json())
     .then(countries => {
       if (countries.length >= 2 && countries.length <= 10) {
-        console.log(countries);
         markup = countriesListTemplate(countries);
         outputCont.insertAdjacentHTML('beforeend', markup);
       } else if (countries.length > 10) {
